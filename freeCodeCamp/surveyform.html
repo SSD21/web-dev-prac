@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>freeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="div-form"><form id="survey-form"><fieldset>
+      <label id="name-label"> Name: <input type="text" id="name"  placeholder="Enter your name" required></input></label> <br>
+      <label id="email-label"> Email: <input type="email" id="email" placeholder="Enter your email" required></input></label><br>
+      <label id="number-label"> Age: <input type="number" id="number" min="13" max="120" value="age" placeholder=" Age"></input></label></fieldset>
+      <fieldset><label> Which option best describes your current role <br>
+        <select id="dropdown">
+          <option>select one</option>
+          <option>Student</option>
+          <option>Full-time employed</option>
+          <option>Part-time employed</option>
+          <option>Unemployed</option>
+          <option>Retired</option>
+        </select>
+      </label></fieldset>
+      <fieldset><label> Would you recommend freeCodeCamp to a friend?
+        <br><label><input type="radio" name="preference" class="inline" value="yes-pref" /> Yes</label>
+        <br><label><input type="radio" name="preference" class="inline" value="no-pref"  /> No</label>
+        <br><label><input type="radio" name="preference" class"inline" value="maybe-pref" /> Maybe</label><br><br>
+      </label></fieldset>
+
+      <fieldset><label>What would you like to see improved? </label>
+      <br><label><input type="checkbox" required class="inline" value="coding-prac" /> Coding practice </label>
+      <br><label><input type="checkbox" required class="inline" value="video-tutorials" /> Video Tutorials </label>
+      <br><label><input type="checkbox" required class="inline" value="discussion-forum" /> Discussion Forum </label>
+      <br><label><input type="checkbox" required class="inline" value="project prac" /> Project practice </label></fieldset><br><br>
+      <fieldset><label class="textbox"> Please share any comments or suggestions:<textarea name="comments" rows="5" cols="30" placeholder="comments/suggestions" ></textarea></label></fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form></div>
+  </body>
+</html>
