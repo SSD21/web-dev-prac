@@ -37,3 +37,8 @@ body {
     width: 50%;
   }
 }
+@media (max-width:600px){
+  #gallery img{
+    width: 100%
+  }
+}
